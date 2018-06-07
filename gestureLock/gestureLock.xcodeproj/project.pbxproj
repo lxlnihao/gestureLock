@@ -21,6 +21,11 @@
 		3D508DC720C8CBDF0085C64E /* gesture_node_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D508DC520C8CBDF0085C64E /* gesture_node_normal.png */; };
 		3D508DC820C8CBDF0085C64E /* gesture_node_normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D508DC620C8CBDF0085C64E /* gesture_node_normal@2x.png */; };
 		3D508DCA20C8CBE90085C64E /* Home_refresh_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D508DC920C8CBE90085C64E /* Home_refresh_bg.png */; };
+		3D508DDB20C8E1C20085C64E /* photograph_Select@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D508DD720C8E1C20085C64E /* photograph_Select@2x.png */; };
+		3D508DDC20C8E1C20085C64E /* photograph@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D508DD820C8E1C20085C64E /* photograph@3x.png */; };
+		3D508DDD20C8E1C20085C64E /* photograph_Select@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D508DD920C8E1C20085C64E /* photograph_Select@3x.png */; };
+		3D508DDE20C8E1C20085C64E /* photograph@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D508DDA20C8E1C20085C64E /* photograph@2x.png */; };
+		3D508DE120C8E1F10085C64E /* CameraController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D508DE020C8E1F10085C64E /* CameraController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +71,12 @@
 		3D508DC520C8CBDF0085C64E /* gesture_node_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gesture_node_normal.png; sourceTree = "<group>"; };
 		3D508DC620C8CBDF0085C64E /* gesture_node_normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gesture_node_normal@2x.png"; sourceTree = "<group>"; };
 		3D508DC920C8CBE90085C64E /* Home_refresh_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Home_refresh_bg.png; sourceTree = "<group>"; };
+		3D508DD720C8E1C20085C64E /* photograph_Select@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "photograph_Select@2x.png"; sourceTree = "<group>"; };
+		3D508DD820C8E1C20085C64E /* photograph@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "photograph@3x.png"; sourceTree = "<group>"; };
+		3D508DD920C8E1C20085C64E /* photograph_Select@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "photograph_Select@3x.png"; sourceTree = "<group>"; };
+		3D508DDA20C8E1C20085C64E /* photograph@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "photograph@2x.png"; sourceTree = "<group>"; };
+		3D508DDF20C8E1F10085C64E /* CameraController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CameraController.h; sourceTree = "<group>"; };
+		3D508DE020C8E1F10085C64E /* CameraController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CameraController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +156,7 @@
 		3D508DA320C8C5C40085C64E /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				3D508DD220C8E17F0085C64E /* Camera */,
 				3D508DB620C8C82D0085C64E /* gestureLock */,
 				3D508DA420C8C5C40085C64E /* Other */,
 				3D508DAD20C8C5C40085C64E /* null */,
@@ -240,6 +252,51 @@
 				3D508DC220C8CBD50085C64E /* gesture_node_highlighted@2x.png */,
 				3D508DC520C8CBDF0085C64E /* gesture_node_normal.png */,
 				3D508DC620C8CBDF0085C64E /* gesture_node_normal@2x.png */,
+			);
+			path = Image;
+			sourceTree = "<group>";
+		};
+		3D508DD220C8E17F0085C64E /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				3D508DD620C8E1A80085C64E /* Image */,
+				3D508DD320C8E17F0085C64E /* Controller */,
+				3D508DD420C8E17F0085C64E /* Model */,
+				3D508DD520C8E17F0085C64E /* View */,
+			);
+			path = Camera;
+			sourceTree = "<group>";
+		};
+		3D508DD320C8E17F0085C64E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3D508DDF20C8E1F10085C64E /* CameraController.h */,
+				3D508DE020C8E1F10085C64E /* CameraController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3D508DD420C8E17F0085C64E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3D508DD520C8E17F0085C64E /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3D508DD620C8E1A80085C64E /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				3D508DD720C8E1C20085C64E /* photograph_Select@2x.png */,
+				3D508DD920C8E1C20085C64E /* photograph_Select@3x.png */,
+				3D508DDA20C8E1C20085C64E /* photograph@2x.png */,
+				3D508DD820C8E1C20085C64E /* photograph@3x.png */,
 			);
 			path = Image;
 			sourceTree = "<group>";
@@ -347,8 +404,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D508DDD20C8E1C20085C64E /* photograph_Select@3x.png in Resources */,
 				3D508DC420C8CBD50085C64E /* gesture_node_highlighted@2x.png in Resources */,
+				3D508DDE20C8E1C20085C64E /* photograph@2x.png in Resources */,
+				3D508DDB20C8E1C20085C64E /* photograph_Select@2x.png in Resources */,
 				3D508DCA20C8CBE90085C64E /* Home_refresh_bg.png in Resources */,
+				3D508DDC20C8E1C20085C64E /* photograph@3x.png in Resources */,
 				3D508DC820C8CBDF0085C64E /* gesture_node_normal@2x.png in Resources */,
 				3D508D7B20C8C3A70085C64E /* Assets.xcassets in Resources */,
 				3D508DC720C8CBDF0085C64E /* gesture_node_normal.png in Resources */,
@@ -377,6 +438,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D508DE120C8E1F10085C64E /* CameraController.m in Sources */,
 				3D508DBC20C8C83B0085C64E /* GestureController.m in Sources */,
 				3D508DB120C8C5C40085C64E /* ViewController.m in Sources */,
 				3D508D8120C8C3A70085C64E /* main.m in Sources */,

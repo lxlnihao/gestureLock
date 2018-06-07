@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "GestureController.h"
+#import "CameraController.h"
 
 #define wj_width [UIScreen mainScreen].bounds.size.width
 #define wj_height [UIScreen mainScreen].bounds.size.height
@@ -34,7 +35,7 @@
     self.edgesForExtendedLayout = UIRectEdgeNone;
     self.navigationItem.title = @"项目列表";
     
-    self.dataArr = @[@"手势解锁"];
+    self.dataArr = @[@"手势解锁",@"自定义相机"];
     [self.view addSubview:self.tableView];
 }
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
@@ -51,9 +52,12 @@
 }
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    if (indexPath.row==0) {
+    if (indexPath.row==0) {//手势解锁
         GestureController* gesture = [[GestureController alloc]init];
         [self.navigationController pushViewController:gesture animated:YES];
+    }else if (indexPath.row==1){
+        CameraController* camera = [[CameraController alloc]init];
+        [self.navigationController presentViewController:camera animated:YES completion:nil];
     }
 }
 
